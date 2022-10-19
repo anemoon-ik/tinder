@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "tinder",
-    "slug": "tinder",
+    "slug": "tinder-2",
+    "owner": "anemoon23",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,13 +19,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "host.exp.exponent"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.anemoon23.tinder2"
     },
     "web": {
       "favicon": "./assets/favicon.png"
