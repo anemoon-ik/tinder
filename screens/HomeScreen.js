@@ -7,16 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 // import Swiper from "@react-native-deck-swiper";
 
-// const DATA = [
-//   {
-//     firstName: "Aiaika",
-//     lastName: "Cuti",
-//     occupation: "Graphic Designer",
-//     photoURL: "",
-//     age: 22,
-//     id: 34,
-//   },
-// ]
+
 
 
 const HomeScreen = () => {
@@ -35,9 +26,16 @@ const HomeScreen = () => {
     <SafeAreaView style={tw("flex-1")}>
       {/* Header */}
       <View style={tw("flex-row items-center justify-between px-5")}>
-        {/* <TouchableOpacity onPress={logout}>
-            <Image style={tw('h-10 w-19 rounded-full')} source={{uri: user.PhotoURL}}/>
+        {/* <TouchableOpacity onPress={logout}> */}
+            {/* <Image style={tw('h-10 w-19 rounded-full')} source={{uri: user.PhotoURL}}/> */}
+            {/* <Text>Logout</Text>
           </TouchableOpacity> */}
+
+          <TouchableOpacity onPress={logout}>
+            <Text>Logout</Text>
+          </TouchableOpacity>
+
+          <Text>This is HomeScreen</Text>
 
         {/* <TouchableOpacity>
           </TouchableOpacity> */}
@@ -51,7 +49,7 @@ const HomeScreen = () => {
 
 
       {/* end of the header */}
-      <Button title="login" onPress={() => navigation.navigate('Login')} />
+      {/* <Button title="login" onPress={() => navigation.navigate('Login')} /> */}
 
       {/* <View style={tw("flex-1 -mt-6")}>
         <Swiper 

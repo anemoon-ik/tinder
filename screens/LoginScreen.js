@@ -21,7 +21,7 @@ const LoginScreen = () => {
     <View style={styles.container}>
       <ImageBackground source={image} style={styles.image}>
         <TouchableOpacity style={styles.opacity} onPress={signInWithGoogle}>
-          <Text style={styles.text}>fall in love with your solitude</Text>
+          <Text style={styles.text}>login to fall in love with your solitude</Text>
         </TouchableOpacity>
       </ImageBackground>
     </View>
@@ -54,12 +54,12 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
   },
-  opacity: {
-    position: 'absolute',
-    left: 50,
-    backgroundColor: '#000000a0',
-    borderRadius: 60,
-  },
+  // opacity: {
+  //   position: 'absolute',
+  //   left: 50,
+  //   backgroundColor: '#000000a0',
+  //   borderRadius: 60,
+  // },
   image: {
     flex: 1,
     resizeMode: 'cover',
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     textAlign: 'center',
+    backgroundColor: '#000000a0',
   },
 });
 
